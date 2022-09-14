@@ -6,7 +6,7 @@
   <title>JS Bin</title>
 </head>
 <body>
-  <svg width = "600" height = "400" style = "background: cyan">
+  <svg width = "600" height = "400" style = "background: lightgray">
     <defs>
       <line id = "spoke"
             x1 = "0" y1 = "0" x2 = "50" y2 = "0"
@@ -29,13 +29,24 @@
       <use xlink:href= "#spoke"
            transform = "rotate(300)"/>
     </g>
+    <g id = "carbody">
+      <rect x = "90" width = "200" height = "100"/>
+      <rect y = "50" width = "400" height = "100"/>
+    </g>
+    <g id = "car">
+    <use xlink:href = "#wheel"
+         transform = "translate(100, 180)"/>
+    <use xlink:href = "#wheel"
+         transform = "translate(300, 180)"/>
+    <use xlink:href = "#carbody">
+    </g>
     </defs>
-    <rect x = "90" width = "200" height = "100"/>
-    <rect y = "50" width = "400" height = "150"/>
-    <use xlink:href = "#wheel"
-         transform = "translate(100, 200)"/>
-    <use xlink:href = "#wheel"
-         transform = "translate(300, 200)"/>
+    <use xlink:href = "#car" fill = "red"
+         transform = "translate(60, 10) scale(0.3)"/>
+    <use xlink:href = "#car" fill = "blue"
+         transform = "translate(80, 200) scale(0.5)"/>
+    <use xlink:href = "#car" fill = "green"
+         transform = "translate(250, 70) scale(0.7) rotate(-10)"/>
   </svg>
 </body>
 </html>
