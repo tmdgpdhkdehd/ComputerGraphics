@@ -1,0 +1,160 @@
+{
+	"metadata": {
+		"type": "App"
+	},
+	"project": {
+		"shadows": true,
+		"shadowType": 1,
+		"vr": false,
+		"physicallyCorrectLights": false,
+		"toneMapping": 0,
+		"toneMappingExposure": 1
+	},
+	"camera": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"object": {
+			"uuid": "7fa12d1b-a989-4aa8-a016-5da3ae314fdc",
+			"type": "PerspectiveCamera",
+			"name": "Camera",
+			"layers": 1,
+			"matrix": [-0.7035624231956376,2.775557561562891e-17,-0.7106334615447562,0,-0.374759260587591,0.8496422933156516,0.37103028180077474,0,0.6037842439737264,0.5273594347400262,-0.5977763907346585,0,4.311881964620229,3.766099659312718,-4.268977310704235,1],
+			"fov": 50,
+			"zoom": 1,
+			"near": 0.01,
+			"far": 1000,
+			"focus": 10,
+			"aspect": 1.7900552486187846,
+			"filmGauge": 35,
+			"filmOffset": 0
+		}
+	},
+	"scene": {
+		"metadata": {
+			"version": 4.5,
+			"type": "Object",
+			"generator": "Object3D.toJSON"
+		},
+		"geometries": [
+			{
+				"uuid": "62866cdd-06d7-4bc8-ba90-ba48612c19b1",
+				"type": "BoxGeometry",
+				"width": 1,
+				"height": 1,
+				"depth": 1,
+				"widthSegments": 1,
+				"heightSegments": 1,
+				"depthSegments": 1
+			},
+			{
+				"uuid": "33a53bf3-1b42-4b65-8532-dab5584f037c",
+				"type": "PlaneGeometry",
+				"width": 1,
+				"height": 1,
+				"widthSegments": 1,
+				"heightSegments": 1
+			}],
+		"materials": [
+			{
+				"uuid": "2f8ce2e1-89bb-4795-b6a4-526f30553562",
+				"type": "MeshStandardMaterial",
+				"color": 16711680,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			},
+			{
+				"uuid": "500279e1-530c-40b7-bff3-69b6145dcf8b",
+				"type": "MeshStandardMaterial",
+				"color": 65297,
+				"roughness": 1,
+				"metalness": 0,
+				"emissive": 0,
+				"envMapIntensity": 1,
+				"depthFunc": 3,
+				"depthTest": true,
+				"depthWrite": true,
+				"colorWrite": true,
+				"stencilWrite": false,
+				"stencilWriteMask": 255,
+				"stencilFunc": 519,
+				"stencilRef": 0,
+				"stencilFuncMask": 255,
+				"stencilFail": 7680,
+				"stencilZFail": 7680,
+				"stencilZPass": 7680
+			}],
+		"object": {
+			"uuid": "5f03e799-14e8-459a-97ac-4d287d5c1f8d",
+			"type": "Scene",
+			"name": "Scene",
+			"layers": 1,
+			"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1],
+			"children": [
+				{
+					"uuid": "5be89020-00a5-45c2-ac68-05d4685e5f22",
+					"type": "Mesh",
+					"name": "Box",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,0,0.5,0,1],
+					"geometry": "62866cdd-06d7-4bc8-ba90-ba48612c19b1",
+					"material": "2f8ce2e1-89bb-4795-b6a4-526f30553562"
+				},
+				{
+					"uuid": "7b665900-4bcf-4a2e-ab8a-cd5b4d505953",
+					"type": "Mesh",
+					"name": "Plane",
+					"layers": 1,
+					"matrix": [10,0,0,0,0,2.220446049250313e-15,-10,0,0,1,2.220446049250313e-16,0,0,0,0,1],
+					"geometry": "33a53bf3-1b42-4b65-8532-dab5584f037c",
+					"material": "500279e1-530c-40b7-bff3-69b6145dcf8b"
+				},
+				{
+					"uuid": "8318c7d9-e75f-46e4-a6e6-7b4ebf34c1ca",
+					"type": "DirectionalLight",
+					"name": "DirectionalLight",
+					"layers": 1,
+					"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,5,10,7.5,1],
+					"color": 16777215,
+					"intensity": 1,
+					"shadow": {
+						"camera": {
+							"uuid": "affaacd4-b362-439e-9656-1641089086db",
+							"type": "OrthographicCamera",
+							"layers": 1,
+							"zoom": 1,
+							"left": -5,
+							"right": 5,
+							"top": 5,
+							"bottom": -5,
+							"near": 0.5,
+							"far": 500
+						}
+					}
+				}]
+		}
+	},
+	"scripts": {
+		"5be89020-00a5-45c2-ac68-05d4685e5f22": [
+			{
+				"name": "",
+				"source": "// Box 하나를 원점에 놓고 밑에 기준이 되는 바닥 모양의 평면을 깔아놓은\n\n// Scene에 추가한 스크립트\n\n \n\nvar box = scene.getObjectByName(\"Box\")\n\nvar sphere = scene.getObjectByName(\"sphere\")\n\nvar torus = scene.getObjectByName(\"torus\")\n\nvar target = new THREE.Vector3()\n\nvar threeCamera = true;\n\n\t\tcamera.position.x = box.position.x\n\t\tcamera.position.y = box.position.y + 2\n\t\tcamera.position.z = box.position.z - 4\n\nbox.add(camera) // 카메라가 박스가 움직일 때 같이 움직일 수 있게 상속\n\ndocument.onkeydown = function(e) {\n\tcamera.lookAt( box.position )\n\n\te = e || window.event;\n\n\tconsole.log(e.keyCode)\n\n\tswitch(e.keyCode) {\n\t\tcase 49: // 1 (1인칭)\n\t\t\tif  (!threeCamera) break;\n\t\t\tthreeCamera = false\n\t\t\t\n\t\t\tbreak;\n\t\t\t\n\t\tcase 66: //b (3인칭)\n\t\t\tif  (threeCamera) break;\n\t\t\tcamera.position.x = box.position.x\n\t\t\tcamera.position.y = box.position.y + 2\n\t\t\tcamera.position.z = box.position.z - 4\n\t\t\tthreeCamera = true\n\n\t\t   \tbreak;\n\n\t\t// 박스 움직이기 좌우키는 방향 회전, 상하키로 (내가 바라보는 방향 기준) 전후진\n\n\t\tcase 37: //left\n\n\t\t\tbox.rotation.y += 0.1\n\n\t\t   \tbreak;\n\n\t\t\t\n\n\t\tcase 38: // up\n\n\t\t\t// box의 방향(세계좌표)을 target의 x,y,z 속성에 설정\n\n\t\t\tbox.getWorldDirection(target)\n\n\t\t\t// target 방향으로 일정 거리만큼 이동\n\n\t\t\tbox.position.add( target.multiplyScalar(0.1) )\n\n\t\t   \t\n\n\t\t\tbreak;\n\n\t\t\t\n\n\t\tcase 39: // right\n\n\t\t\tbox.rotation.y -= 0.1\n\n\t\t   \tbreak;\n\n\t\t\t\n\n\t\tcase 40: // down\n\n\t\t\t// box의 방향(세계좌표)을 target의 x,y,z 속성에 설정\n\n\t\t\tbox.getWorldDirection(target)\n\n\t\t\t// target 방향으로 일정 거리(0,1)만큼 이동\n\n\t\t\tbox.position.add( target.multiplyScalar(-0.1) )\n\n\t\t\tbreak;\n\n\t}\n\n}\n\n \n// XYZ축 방향 나옴\nconst axesHelper = new THREE.AxesHelper(2)\nbox.add(axesHelper);\n\n \n\nfunction update( event ) {\n\tif (threeCamera)\n\t{\n\t\tcamera.lookAt( box.position )\n\t}\n\telse\n\t{\n\t\tcamera.position.set(0, 1, 0.5)\n\t\tcamera.rotation.set(Math.PI/5, Math.PI, Math.PI/45 - 0.07)\n\t}\n}"
+			}]
+	}
+}
